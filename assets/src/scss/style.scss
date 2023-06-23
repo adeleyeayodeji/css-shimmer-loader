@@ -1,0 +1,74 @@
+.blog-post {
+  &__headline {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+
+  &__meta {
+    font-size: 0.85em;
+    color: #6b6b6b;
+  }
+}
+
+// OBJECTS
+
+.o-media {
+  display: flex;
+
+  &__body {
+    flex-grow: 1;
+    margin-left: 1em;
+  }
+}
+
+.o-vertical-spacing {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  &--l {
+    > * + * {
+      margin-top: 2em;
+    }
+  }
+}
+
+// MISC
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 42em;
+  margin: 0 auto;
+  padding: 3em 1em;
+  font-family: "Karla", sans-serif;
+  line-height: 1.4;
+}
+
+header {
+  max-width: 42em;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+main {
+  margin-top: 3em;
+}
+
+header {
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2em;
+  }
+
+  p {
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+}
